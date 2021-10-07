@@ -1,4 +1,4 @@
-## Live Site: []()
+## Live Site: [https://sunil-sharma-999.github.io/3-column-preview-card-component-solution/](https://sunil-sharma-999.github.io/3-column-preview-card-component-solution/)
 
 # 3-column preview card component solution
 
@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/sunil-sharma-999/3-column-preview-card-component-solution](https://github.com/sunil-sharma-999/3-column-preview-card-component-solution)
+- Live Site URL: [https://sunil-sharma-999.github.io/3-column-preview-card-component-solution/](https://sunil-sharma-999.github.io/3-column-preview-card-component-solution/)
 
 ## My process
 
