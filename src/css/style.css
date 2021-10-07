@@ -8,7 +8,7 @@ body {
   background-color: white;
   display: flex;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
 }
 
 .wrap {
@@ -101,7 +101,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "c1 c2 c3";
-    margin: 9rem;
+    margin: 9rem 0;
   }
   .wrap .card {
     width: 300px;
