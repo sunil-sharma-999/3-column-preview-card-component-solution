@@ -1,0 +1,139 @@
+// ### Primary
+$BrightOrange: hsl(31, 77%, 52%);
+$DarkCyan: hsl(184, 100%, 22%);
+$VeryDarkCyan: hsl(179, 100%, 13%);
+// ### Neutral
+$TransparentWhiteParagraphs: hsla(0, 0%, 100%, 0.75);
+$VeryLightGrayBgHeadingsButtons: hsl(0, 0%, 95%);
+// fonts
+$BSDFont: 'Big Shoulders Display', cursive;
+$LDFont: 'Lexend Deca', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.wrap {
+  font-family: $LDFont;
+  font-weight: 400;
+  margin: 5.7rem 0;
+  display: grid;
+  .card {
+    color: $VeryLightGrayBgHeadingsButtons;
+    padding: 2rem;
+    padding-left: 2.8rem;
+    background-color: red;
+    width: 325px;
+    .title {
+      font-family: $BSDFont;
+      font-size: 2.3rem;
+      margin: 1.9rem 0;
+    }
+    .info {
+      font-size: 1rem;
+      color: $TransparentWhiteParagraphs;
+      line-height: 1.5rem;
+    }
+    .btn {
+      background-color: $VeryLightGrayBgHeadingsButtons;
+      width: max-content;
+      padding: 0.8rem 1.8rem;
+      border: 2px solid transparent;
+      border-radius: 50px;
+      margin-top: 1.8rem;
+      &:hover {
+        background-color: transparent;
+        color: white;
+        border-color: $VeryLightGrayBgHeadingsButtons;
+        cursor: pointer;
+      }
+    }
+  }
+  .card1 {
+    background-color: $BrightOrange;
+    border-radius: 8px 8px 0 0;
+
+    .btn {
+      color: $BrightOrange;
+    }
+  }
+  .card2 {
+    background-color: $DarkCyan;
+    .btn {
+      color: $DarkCyan;
+    }
+  }
+  .card3 {
+    background-color: $VeryDarkCyan;
+    border-radius: 0 0 8px 8px;
+    .btn {
+      color: $VeryDarkCyan;
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .wrap {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 'c1 c1' 'c2 c3';
+    height: max-content;
+    .card {
+      width: 300px;
+      padding: 3rem;
+      padding-right: 2rem;
+      padding-left: 2.8rem;
+    }
+    .card1 {
+      grid-area: c1;
+      border-radius: 8px 8px 0 0;
+      justify-self: center;
+    }
+    .card2 {
+      grid-area: c2;
+      border-radius: 8px 0 0 8px;
+    }
+    .card3 {
+      grid-area: c3;
+      border-radius: 0 8px 8px 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .wrap {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'c1 c2 c3';
+    margin: 9rem;
+    .card {
+      width: 300px;
+      padding: 3rem;
+      padding-right: 2rem;
+      padding-left: 2.8rem;
+      .btn {
+        margin-top: 5.5rem;
+      }
+    }
+    .card1 {
+      grid-area: c1;
+      border-radius: 8px 0 0 8px;
+    }
+    .card2 {
+      grid-area: c2;
+      border-radius: 0;
+    }
+    .card3 {
+      grid-area: c3;
+      border-radius: 0 8px 8px 0;
+    }
+  }
+}
