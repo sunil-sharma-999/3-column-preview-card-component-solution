@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.wrap {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  margin: 5.7rem 0;
+  display: grid;
+}
+.wrap .card {
+  color: #f2f2f2;
+  padding: 2rem;
+  padding-left: 2.8rem;
+  background-color: red;
+  width: 325px;
+}
+.wrap .card .title {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.3rem;
+  margin: 1.9rem 0;
+}
+.wrap .card .info {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.5rem;
+}
+.wrap .card .btn {
+  background-color: #f2f2f2;
+  width: max-content;
+  padding: 0.8rem 1.8rem;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  margin-top: 1.8rem;
+}
+.wrap .card .btn:hover {
+  background-color: transparent;
+  color: white;
+  border-color: #f2f2f2;
+  cursor: pointer;
+}
+.wrap .card1 {
+  background-color: #e38826;
+  border-radius: 8px 8px 0 0;
+}
+.wrap .card1 .btn {
+  color: #e38826;
+}
+.wrap .card2 {
+  background-color: #006970;
+}
+.wrap .card2 .btn {
+  color: #006970;
+}
+.wrap .card3 {
+  background-color: #004241;
+  border-radius: 0 0 8px 8px;
+}
+.wrap .card3 .btn {
+  color: #004241;
+}
+
+@media screen and (min-width: 800px) {
+  .wrap {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "c1 c1" "c2 c3";
+    height: max-content;
+  }
+  .wrap .card {
+    width: 300px;
+    padding: 3rem;
+    padding-right: 2rem;
+    padding-left: 2.8rem;
+  }
+  .wrap .card1 {
+    grid-area: c1;
+    border-radius: 8px 8px 0 0;
+    justify-self: center;
+  }
+  .wrap .card2 {
+    grid-area: c2;
+    border-radius: 8px 0 0 8px;
+  }
+  .wrap .card3 {
+    grid-area: c3;
+    border-radius: 0 8px 8px 0;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .wrap {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "c1 c2 c3";
+    margin: 9rem;
+  }
+  .wrap .card {
+    width: 300px;
+    padding: 3rem;
+    padding-right: 2rem;
+    padding-left: 2.8rem;
+  }
+  .wrap .card .btn {
+    margin-top: 5.5rem;
+  }
+  .wrap .card1 {
+    grid-area: c1;
+    border-radius: 8px 0 0 8px;
+  }
+  .wrap .card2 {
+    grid-area: c2;
+    border-radius: 0;
+  }
+  .wrap .card3 {
+    grid-area: c3;
+    border-radius: 0 8px 8px 0;
+  }
+}/*# sourceMappingURL=style.css.map */
